@@ -42,6 +42,9 @@ gem 'bulma-rails', '~> 0.9.4'
 
 gem 'simple_form', '~> 5.3'
 
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+
 
 
 
@@ -70,7 +73,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem 'guard', '~> 2.18', '>= 2.18.1'
+  gem 'guard', '~> 2.18', '>= 2.18.1', require: false
 
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 
