@@ -35,6 +35,17 @@ gem "jbuilder"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
+# Bulma css framework
+gem 'bulma-rails', '~> 0.9.4'
+
+# Easy Forms
+
+gem 'simple_form', '~> 5.3'
+
+
+
+
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -47,6 +58,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  
 end
 
 group :development do
@@ -58,6 +70,9 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'guard', '~> 2.18', '>= 2.18.1'
+
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 
 end
 
