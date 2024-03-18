@@ -1,3 +1,20 @@
+<!-- app/views/users/show.html.erb -->
+
 <h1>User Details</h1>
 <p>Name: <%= @user.name %></p>
+<p><%= @user.id %></p>
+<!-- Display other user details as needed -->
 
+<% if @posts.present? %>
+  <h2>User Posts</h2>
+  <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <h3><%= post.title %></h3>
+        <p><%= post.text %></p>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No posts found for this user.</p>
+<% end %>
