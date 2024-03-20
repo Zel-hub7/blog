@@ -1,6 +1,6 @@
 <!-- app/views/users/show.html.erb -->
 
-<h1>User Details</h1>
+<h1><%= link_to 'User Details', user_posts_path(@user) %></h1>
 <p>Name: <%= @user.name %></p>
 <p><%= @user.id %></p>
 <!-- Display other user details as needed -->
