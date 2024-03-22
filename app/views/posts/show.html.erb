@@ -1,0 +1,9 @@
+<h1>Post Details</h1>
+<div>
+  <p><strong>Title:</strong> <%= @post.title %></p>
+  <p><strong>Text:</strong> <%= @post.text %></p>
+  <p><strong>Author:</strong> <%= @post.author.name %></p>
+  <!-- Add Comment Form -->
+
+
+<%= link_to 'Back to All Posts', user_posts_path(@user) %>
