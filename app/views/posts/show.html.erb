@@ -4,6 +4,18 @@
   <p><strong>Text:</strong> <%= @post.text %></p>
   <p><strong>Author:</strong> <%= @post.author.name %></p>
   <!-- Add Comment Form -->
+   
 
+  <%= form_with(model: [ @user, @post, @comment ], url: user_post_comments_path(@user, @post), method: :post) do |form| %>
+    <div class="field">
+      <%= form.label :text, "Comment" %>
+      <%= form.text_area :text %>
+    </div>
+    <div class="actions">
+      <%= form.submit "Create Comment" %>
+    </div>
+  <% end %>
+
+  
 
 <%= link_to 'Back to All Posts', user_posts_path(@user) %>
