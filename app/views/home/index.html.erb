@@ -5,7 +5,7 @@
   <% @users.each do |user| %>
     <li class="border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300 ease-in-out">
       <%= link_to user_path(user) do %>
-        <%= image_tag user.photo, class: "w-full h-auto rounded-lg mb-2" %>
+        <%# <%= image_tag user.photo, class: "w-full h-auto rounded-lg mb-2" %>
         <p class="text-lg font-semibold text-red-800 truncate"><%= user.name %></p>
       <% end %>
     </li>

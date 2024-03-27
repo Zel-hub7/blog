@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   devise_for :users
   get 'users/show'
 
-  root 'home#index'
+  authenticated :user do
+    root 'home#index', as: :authenticated_root
+  end
+
+  root to: redirect('/users/sign_up')
 
   resources :users do
     resources :posts do
