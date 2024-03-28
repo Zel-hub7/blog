@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <%= stylesheet_link_tag 'styles', media: 'all' %>
+</head>
+<body>
+
+<div class="login-form"> <!-- Added class for styling -->
+
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -24,3 +36,8 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div> <!-- Close login-form -->
+
+</body>
+</html>

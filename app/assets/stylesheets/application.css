@@ -14,9 +14,4 @@
  *= require_self
  */
 
- *{
-    background-color: red;
- }
- .home-list {
-    display: none;
- }
+ 
