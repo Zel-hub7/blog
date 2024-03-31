@@ -1,0 +1,69 @@
+/* Add your navigation bar styles here */
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem;
+}
+.nav-bar h5 {
+    margin: 0.7rem;
+    font-size: 28px;
+    font-weight: bold; 
+    color: white;
+    background-color: #333; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s;
+    
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav-bar ul li {
+    margin: 0.7rem;
+    color: white;
+    
+}
+
+.new-post {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+  
+.new-post:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+  
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red background color on hover */
+}
+  
+  
+  
+
+  /* Add more styles as needed */
+  

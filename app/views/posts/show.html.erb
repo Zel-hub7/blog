@@ -17,9 +17,6 @@
   <% end %>
 
   <!-- posts/show.html.erb -->
-    <% if can? :destroy, @post %>
-      <%= button_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
-    <% end %>
 
 
   

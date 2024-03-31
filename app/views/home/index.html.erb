@@ -1,13 +1,33 @@
-<!-- app/views/home/index.html.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'navbar', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
 
-<%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+<nav class="nav-bar">
+  <h5>My Blog</h5>
+  <ul>
+    <li class = "new-post">Create New Post</li>
+    <li><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger" %></li>
+  </ul>
+</nav>
+
 <ul class="bg-black">
   <% @users.each do |user| %>
     <li class="border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300 ease-in-out">
       <%= link_to user_path(user) do %>
-        <%# <%= image_tag user.photo, class: "w-full h-auto rounded-lg mb-2" %>
+  
         <p class="text-lg font-semibold text-red-800 truncate"><%= user.name %></p>
       <% end %>
     </li>
   <% end %>
 </ul>
+
+</body>
+</html>
