@@ -1,4 +1,15 @@
-<%= form_with(model: [@user, @post], url: user_posts_path(@user), local: true) do |form| %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Post</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'new', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+
+<%= form_with(model: [@user, @post], url: user_posts_path(@user), local: true, html: { class: "new-post-form" }) do |form| %>
   <div>
     <%= form.label :title %>
     <%= form.text_field :title %>
@@ -13,3 +24,6 @@
     <%= form.submit 'Create Post' %>
   </div>
 <% end %>
+
+</body>
+</html>

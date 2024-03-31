@@ -1,0 +1,44 @@
+.user-details {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px; /* Padding around the content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .user-details h1 {
+    font-size: 24px; /* Larger font size for heading */
+  }
+  
+  .user-details p {
+    margin-bottom: 10px; /* Add some space below paragraphs */
+  }
+  
+  .user-posts {
+    margin-top: 20px; /* Add some space above the posts section */
+  }
+  
+  .user-posts h2 {
+    font-size: 20px; /* Medium font size for section heading */
+  }
+  
+  .user-posts ul {
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .user-posts li {
+    background-color: #fff; /* White background for each post */
+    padding: 10px; /* Padding around each post */
+    margin-bottom: 10px; /* Add some space between posts */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .user-posts h3 {
+    font-size: 18px; /* Smaller font size for post titles */
+  }
+  
+  .user-posts p {
+    margin-top: 5px; /* Add some space above post text */
+  }
+  

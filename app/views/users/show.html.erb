@@ -1,20 +1,37 @@
-<!-- app/views/users/show.html.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Details</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'postShow', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
 
-<h1><%= link_to 'User Details', user_posts_path(@user) %></h1>
-<p>Name: <%= @user.name %></p>
-<p><%= @user.id %></p>
-<!-- Display other user details as needed -->
+<div class="user-details">
+  <h1><%= link_to 'User Details', user_posts_path(@user) %></h1>
+  <p>Name: <%= @user.name %></p>
+  <!-- Display other user details as needed -->
+</div>
 
 <% if @posts.present? %>
-  <h2>User Posts</h2>
-  <ul>
-    <% @posts.each do |post| %>
-      <li>
-        <h3><%= post.title %></h3>
-        <p><%= post.text %></p>
-      </li>
-    <% end %>
-  </ul>
+  <div class="user-posts">
+    <h2>User Posts</h2>
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <h3><%= post.title %></h3>
+          <p><%= post.text %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 <% else %>
-  <p>No posts found for this user.</p>
+  <div class="user-posts">
+    <p>No posts found for this user.</p>
+  </div>
 <% end %>
+
+</body>
+</html>
