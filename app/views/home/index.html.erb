@@ -13,7 +13,8 @@
 <nav class="nav-bar">
   <h5>My Blog</h5>
   <ul>
-    <li class = "new-post">Create New Post</li>
+    <li class = "new-post"><%= link_to 'Create New Post', new_user_post_path(current_user) %>
+</li>
     <li><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger" %></li>
   </ul>
 </nav>

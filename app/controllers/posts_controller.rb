@@ -20,8 +20,7 @@ class PostsController < ApplicationController
     end
 
     def create
-        @user = User.find(params[:user_id])
-        @post = @user.posts.build(post_params)
+        @post = current_user.posts.build(post_params) # Use current_user instead of finding by params[:user_id]
         if @post.save
           redirect_to root_path, notice: 'Post created successfully'
         else
